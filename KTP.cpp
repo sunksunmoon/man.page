@@ -17,7 +17,7 @@ private:
         } else if (jk == 'P' || jk == 'p') {
             gender = "Perempuan";
         } else {
-            cout << "Input salah. Masukkan L atau P." << endl;
+            cout << "Gagal. Tolong masukkan L atau P." << endl;
             pilih_jk();
         }
     }
@@ -39,9 +39,9 @@ private:
             case 3: agama = "Katolik"; break;
             case 4: agama = "Hindu"; break;
             case 5: agama = "Buddha"; break;
-            case 6: agama = "Konghuchu"; break;
+            case 6: agama = "Konghucu"; break;
             default:
-                cout << "Pilihan tidak valid. Silakan pilih lagi." << endl;
+                cout << "Pilihan tidak valid. Silahkan pilih lagi." << endl;
                 pilih_agama();
                 break;
         }
@@ -49,8 +49,8 @@ private:
 
 public:
     void input() {
-        cout << "     Input Data KTP     " << endl;
-        cout << "________________________" << endl;
+        cout << "          Input Data KTP            " << endl;
+        cout << "______________________________________" << endl;
         cout << "Nama                : ";
         getline(cin, nama);
         cout << "NIK                 : ";
@@ -80,11 +80,11 @@ public:
 
     void tampil() {
     	cout<<endl;
-        cout << "       Data KTP       " << endl;
+        cout << " KARTU TANDA PENDUDUK      " << endl;
         cout << "______________________" << endl;
-        cout << "Nama                  : " << nama << endl;
         cout << "NIK                   : " << nik << endl;
-        cout << "Tempat, Tanggal Lahir : " << tempat_l << ", " << tanggal_l << "-" << bulan_l << "-" << tahun_l << endl;
+        cout << "Nama                  : " << nama << endl;
+        cout << "Tempat/ Tanggal Lahir : " << tempat_l << ", " << tanggal_l << "-" << bulan_l << "-" << tahun_l << endl;
         cout << "Jenis Kelamin         : " << gender << endl;
         cout << "Alamat                : " << alamat << endl;
         cout << "Agama                 : " << agama << endl;
